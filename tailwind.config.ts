@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				cyber: {
+					'volt': '#00ff41',
+					'cobalt': '#0047ab',
+					'amethyst': '#9966cc',
+					'black': '#000000',
+					'dark': '#0a0a0a',
+					'gray': '#1a1a1a'
 				}
 			},
 			borderRadius: {
@@ -84,11 +93,52 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'glitch': {
+					'0%, 100%': {
+						transform: 'translate(0)',
+						filter: 'hue-rotate(0deg)'
+					},
+					'20%': {
+						transform: 'translate(-2px, 2px)',
+						filter: 'hue-rotate(90deg)'
+					},
+					'40%': {
+						transform: 'translate(-2px, -2px)',
+						filter: 'hue-rotate(180deg)'
+					},
+					'60%': {
+						transform: 'translate(2px, 2px)',
+						filter: 'hue-rotate(270deg)'
+					},
+					'80%': {
+						transform: 'translate(2px, -2px)',
+						filter: 'hue-rotate(360deg)'
+					}
+				},
+				'flicker': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.8' },
+					'75%': { opacity: '0.9' }
+				},
+				'pulse-glow': {
+					'0%, 100%': {
+						boxShadow: '0 0 5px #00ff41, 0 0 10px #00ff41, 0 0 15px #00ff41'
+					},
+					'50%': {
+						boxShadow: '0 0 10px #00ff41, 0 0 20px #00ff41, 0 0 30px #00ff41'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'glitch': 'glitch 2s infinite',
+				'flicker': 'flicker 1.5s infinite alternate',
+				'pulse-glow': 'pulse-glow 2s infinite'
+			},
+			fontFamily: {
+				'mono': ['JetBrains Mono', 'Fira Code', 'Consolas', 'monospace'],
 			}
 		}
 	},

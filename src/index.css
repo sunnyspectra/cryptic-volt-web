@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -96,6 +98,56 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-cyber-black text-cyber-volt font-mono;
+    background: linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #1a1a1a 100%);
+    overflow-x: hidden;
   }
+
+  .cyber-grid {
+    background-image: 
+      linear-gradient(rgba(0, 255, 65, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 255, 65, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  .glow-text {
+    text-shadow: 0 0 10px currentColor;
+  }
+
+  .cyber-border {
+    border: 1px solid transparent;
+    background: linear-gradient(135deg, #00ff41, #0047ab, #9966cc) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+
+  .scanline {
+    position: relative;
+  }
+
+  .scanline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #00ff41, transparent);
+    animation: scan 3s linear infinite;
+  }
+
+  @keyframes scan {
+    0% { transform: translateY(-100px) scaleX(0); }
+    50% { transform: translateY(50vh) scaleX(1); }
+    100% { transform: translateY(100vh) scaleX(0); }
+  }
+}
+
+.cyber-text-shadow {
+  text-shadow: 
+    0 0 5px currentColor,
+    0 0 10px currentColor,
+    0 0 15px currentColor,
+    0 0 20px currentColor;
 }
