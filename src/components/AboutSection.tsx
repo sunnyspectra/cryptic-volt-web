@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { User, Shield, Code, Database, Lock } from 'lucide-react';
+import { User, Shield, Code, Database, Lock, Terminal } from 'lucide-react';
 
 const AboutSection = () => {
   return (
