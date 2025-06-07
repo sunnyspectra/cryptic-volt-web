@@ -58,7 +58,7 @@ const AboutSection = () => {
                 <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-cyber-volt via-cyber-cobalt to-cyber-amethyst p-1 animate-pulse-glow">
                   <div className="w-full h-full rounded-full bg-cyber-black flex items-center justify-center">
                     <img 
-                      src="/me.png" 
+                      src="/me.jpg" 
                       alt="Profile" 
                       className="w-full h-full rounded-full object-cover"
                     />
