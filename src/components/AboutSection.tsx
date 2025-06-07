@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { User, Shield, Code, Database, Lock, Terminal } from 'lucide-react';
 
@@ -12,7 +13,7 @@ const AboutSection = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-cyber-volt via-cyber-cobalt to-cyber-amethyst mx-auto"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
             <div className="border border-cyber-volt/30 bg-cyber-gray/20 p-6 rounded-lg backdrop-blur-sm">
               <div className="flex items-center mb-4">
@@ -56,12 +57,16 @@ const AboutSection = () => {
           <div className="relative">
             <div className="border border-cyber-volt/30 bg-cyber-gray/20 p-8 rounded-lg backdrop-blur-sm">
               <div className="text-center mb-6">
-                <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-cyber-volt via-cyber-cobalt to-cyber-amethyst p-1 animate-pulse-glow">
-                  <div className="w-full h-full rounded-full bg-cyber-black flex items-center justify-center">
+                <div className="w-full h-64 mx-auto rounded-lg bg-gradient-to-br from-cyber-volt via-cyber-cobalt to-cyber-amethyst p-1 animate-pulse-glow">
+                  <div className="w-full h-full rounded-lg bg-cyber-black flex items-center justify-center">
                     <img 
-                      src="/me.jpg" 
-                      alt="Profile" 
-                      className="w-full h-full rounded-full object-cover"
+                      src="/public/me.jpg" 
+                      alt="Sunheng Profile" 
+                      className="w-full h-full rounded-lg object-cover"
+                      onError={(e) => {
+                        console.log('Image failed to load, using fallback');
+                        e.currentTarget.src = '/placeholder.svg';
+                      }}
                     />
                   </div>
                 </div>
