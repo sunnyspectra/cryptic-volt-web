@@ -18,24 +18,26 @@ const AboutSection = () => {
             <div className="border border-cyber-volt/30 bg-cyber-gray/20 p-6 rounded-lg backdrop-blur-sm">
               <div className="flex items-center mb-4">
                 <User className="w-6 h-6 text-cyber-volt mr-2 animate-flicker" />
-                <h3 className="text-xl font-semibold text-cyber-volt">Personal Profile</h3>
+                <h3 className="text-xl font-semibold text-cyber-volt">About Me</h3>
               </div>
               <p className="text-cyber-volt/80 leading-relaxed animate-flicker">
-                Cybersecurity professional with 5+ years of experience in penetration testing, 
-                secure application development, and incident response. Passionate about protecting 
-                digital infrastructures and developing robust security solutions.
+                Hi! My name is Sunheng, but I am also known as Sunny to some people. I just graduated recently 
+                with a Bachelor's Degree in computer science at Cal State LA. I have a passion for 
+                cybersecurity and am looking for a career in this specific branch. I am currently in the 
+                process of earning certificates as well as coding. Feel free to contact me!
               </p>
             </div>
 
             <div className="border border-cyber-cobalt/30 bg-cyber-gray/20 p-6 rounded-lg backdrop-blur-sm">
               <div className="flex items-center mb-4">
                 <Shield className="w-6 h-6 text-cyber-cobalt mr-2 animate-pulse" />
-                <h3 className="text-xl font-semibold text-cyber-cobalt">Security Focus</h3>
+                <h3 className="text-xl font-semibold text-cyber-cobalt">Experience</h3>
               </div>
               <p className="text-cyber-cobalt/80 leading-relaxed animate-flicker">
-                Specialized in web application security, network penetration testing, 
-                and secure coding practices. Certified in multiple security frameworks 
-                and constantly updating skills with emerging threats.
+                My experience has ranged in various branches of computer science from my time as a student. 
+                This varies from doing work in virtual reality, data science, and robotics. My most prominent 
+                experience was being a student researcher from the summer of 2024 to late spring 2025, working 
+                in the intersection of virtual reality and drug discovery under Dr. Negin Forouzesh.
               </p>
             </div>
 
@@ -45,9 +47,9 @@ const AboutSection = () => {
                 <h3 className="text-xl font-semibold text-cyber-amethyst">Development Skills</h3>
               </div>
               <p className="text-cyber-amethyst/80 leading-relaxed animate-flicker">
-                Full-stack developer proficient in React, Node.js, Python, and Go. 
-                Experience building secure applications with proper authentication, 
-                encryption, and data protection measures.
+                I am proficient in the programming languages Python, Java, and C++. Additionally, I have 
+                familiarity with VSCode, PyCharm, CLion, IntelliJ, Eclipse, Git, and web development. 
+                Robotics is my specialty, and I have coded with Arduinos.
               </p>
             </div>
           </div>
