@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { User, Shield, Code, Database, Lock, Terminal } from 'lucide-react';
 
@@ -55,7 +54,7 @@ const AboutSection = () => {
           </div>
 
           <div className="relative">
-            <div className="cyber-border p-8 rounded-lg bg-cyber-gray/10 backdrop-blur-sm">
+            <div className="border border-cyber-volt/30 bg-cyber-gray/20 p-8 rounded-lg backdrop-blur-sm">
               <div className="text-center mb-6">
                 <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-cyber-volt via-cyber-cobalt to-cyber-amethyst p-1 animate-pulse-glow">
                   <div className="w-full h-full rounded-full bg-cyber-black flex items-center justify-center">
