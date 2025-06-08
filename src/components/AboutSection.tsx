@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { User, Shield, Code, Database, Lock, Terminal } from 'lucide-react';
 
@@ -60,7 +59,7 @@ const AboutSection = () => {
                 <div className="w-full h-64 mx-auto rounded-lg bg-gradient-to-br from-cyber-volt via-cyber-cobalt to-cyber-amethyst p-1 animate-pulse-glow">
                   <div className="w-full h-full rounded-lg bg-cyber-black flex items-center justify-center">
                     <img 
-                      src="/public/me.jpg" 
+                      src="/lovable-uploads/a9955dff-d3d4-4c32-83e8-bf971951b76c.png" 
                       alt="Sunheng Profile" 
                       className="w-full h-full rounded-lg object-cover"
                       onError={(e) => {
