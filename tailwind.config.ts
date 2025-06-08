@@ -69,7 +69,8 @@ export default {
 					'amethyst': '#9966cc',
 					'black': '#000000',
 					'dark': '#0a0a0a',
-					'gray': '#1a1a1a'
+					'gray': '#1a1a1a',
+					'chateau': '#48A860'
 				}
 			},
 			borderRadius: {

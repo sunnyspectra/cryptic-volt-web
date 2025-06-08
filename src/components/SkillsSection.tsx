@@ -5,39 +5,39 @@ import { Shield, Code, Database, Network, Lock, Terminal } from 'lucide-react';
 const SkillsSection = () => {
   const skillCategories = [
     {
-      title: "Security Tools",
+      title: "Technology & Tools",
       icon: Shield,
-      color: "volt",
+      color: "chateau",
       skills: [
-        { name: "Burp Suite", level: 95 },
-        { name: "Metasploit", level: 90 },
-        { name: "Nmap", level: 95 },
-        { name: "Wireshark", level: 85 },
-        { name: "OWASP ZAP", level: 88 }
+        { name: "GitHub", level: 90 },
+        { name: "VSCode", level: 90 },
+        { name: "Eclipse IDE", level: 92 },
+        { name: "Microsoft Office", level: 95 },
+        { name: "Git & Terminal", level: 88 }
       ]
     },
     {
       title: "Programming",
       icon: Code,
-      color: "cobalt",
+      color: "chateau",
       skills: [
-        { name: "Python", level: 95 },
-        { name: "JavaScript", level: 90 },
-        { name: "Go", level: 85 },
-        { name: "C++", level: 80 },
-        { name: "Bash", level: 92 }
+        { name: "Java", level: 92 },
+        { name: "Python", level: 88 },
+        { name: "C++", level: 90 },
+        { name: "SQL", level: 92 },
+        { name: "JavaScript", level: 80 }
       ]
     },
     {
       title: "Frameworks",
       icon: Database,
-      color: "amethyst",
+      color: "chateau",
       skills: [
-        { name: "React", level: 90 },
-        { name: "Node.js", level: 88 },
-        { name: "Django", level: 85 },
-        { name: "Flask", level: 90 },
-        { name: "Express", level: 87 }
+        { name: "React (Lucide)", level: 80 },
+        { name: "Node.js", level: 80 },
+        { name: "Django", level: 82 },
+        { name: "Bootstrap", level: 80 },
+        { name: "Tailwind CSS", level: 80 }
       ]
     }
   ];
@@ -62,6 +62,12 @@ const SkillsSection = () => {
           border: 'border-cyber-amethyst',
           bg: 'bg-cyber-amethyst'
         };
+      case 'chateau':
+        return{
+          text: 'text-cyber-chateau',
+          border: 'border-cyber-volt',
+          bg: 'bg-cyber-cobalt'
+        }
       default:
         return {
           text: 'text-cyber-volt',
@@ -75,10 +81,10 @@ const SkillsSection = () => {
     <section id="skills" className="py-20 px-4 relative">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 animate-glitch">
-            <span className="text-cyber-volt animate-flicker">SKILLS.DB</span>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6"> {/*remove animate-glitch*/}
+            <span className="text-cyber-chateau">SKILLS.DB</span> {/*remove animate-flicker*/}
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-cyber-volt via-cyber-cobalt to-cyber-amethyst mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-cyber-volt via-cyber-chateau to-cyber-volt mx-auto"></div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -104,7 +110,7 @@ const SkillsSection = () => {
                       </div>
                       <div className={`w-full bg-cyber-gray h-2 rounded-full border ${colors.border}/20`}>
                         <div 
-                          className={`${colors.bg} h-full rounded-full animate-pulse-glow transition-all duration-1000 ease-out`}
+                          className={`${colors.bg} h-full rounded-full transition-all duration-1000 ease-out`} //remove animate-pulse-glow
                           style={{ width: `${skill.level}%` }}
                         ></div>
                       </div>
@@ -118,8 +124,8 @@ const SkillsSection = () => {
 
         <div className="mt-16 text-center">
           <div className="inline-flex items-center space-x-4 bg-cyber-gray/20 border border-cyber-volt/30 px-6 py-3 rounded-lg">
-            <Terminal className="w-6 h-6 text-cyber-volt animate-pulse" />
-            <span className="text-cyber-volt animate-flicker font-mono">
+            <Terminal className="w-6 h-6 text-cyber-chateau animate-pulse" />
+            <span className="text-cyber-chateau animate-flicker font-mono">
               &gt; Constantly learning and adapting to new technologies_
             </span>
           </div>

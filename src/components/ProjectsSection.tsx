@@ -67,10 +67,10 @@ const ProjectsSection = () => {
     <section id="projects" className="py-20 px-4 relative">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 animate-glitch">
-            <span className="text-cyber-volt animate-flicker">PROJECTS.SYS</span>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6"> {/* remove animate-glitch*/}
+            <span className="text-cyber-chateau animate-flicker">PROJECTS.SYS</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-cyber-volt via-cyber-cobalt to-cyber-amethyst mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-cyber-volt via-cyber-chateau to-cyber-volt mx-auto"></div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

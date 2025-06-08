@@ -27,10 +27,10 @@ const ContactSection = () => {
     <section id="contact" className="py-20 px-4 relative">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 animate-glitch">
-            <span className="text-cyber-volt animate-flicker">CONTACT.LOG</span>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6"> {/*remove animate-glitch*/}
+            <span className="text-cyber-chateau animate-flicker">CONTACT.LOG</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-cyber-volt via-cyber-cobalt to-cyber-amethyst mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-cyber-volt via-cyber-chateau to-cyber-volt mx-auto"></div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -48,15 +48,15 @@ const ContactSection = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
                   <Mail className="w-6 h-6 text-cyber-volt animate-pulse" />
-                  <span className="text-gray-300 animate-flicker">cyber.dev@security.com</span>
+                  <span className="text-gray-300 animate-flicker">lngsay1688@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <Phone className="w-6 h-6 text-cyber-cobalt animate-pulse" />
-                  <span className="text-gray-300 animate-flicker">+1 (555) CYBER-SEC</span>
+                  <Phone className="w-6 h-6 text-cyber-volt animate-pulse" />
+                  <span className="text-gray-300 animate-flicker">Provided upon request</span>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <MapPin className="w-6 h-6 text-cyber-amethyst animate-pulse" />
-                  <span className="text-gray-300 animate-flicker">San Francisco, CA</span>
+                  <MapPin className="w-6 h-6 text-cyber-volt animate-pulse" />
+                  <span className="text-gray-300 animate-flicker">Los Angeles, CA</span>
                 </div>
               </div>
 
@@ -65,14 +65,14 @@ const ContactSection = () => {
                   Connect Online
                 </h4>
                 <div className="flex space-x-4">
-                  <a href="#" className="p-3 border border-cyber-volt/30 rounded-lg hover:border-cyber-volt hover:bg-cyber-volt/10 transition-all duration-300 group">
+                  <a href="https://github.com/sunnyspectra" className="p-3 border border-cyber-volt/30 rounded-lg hover:border-cyber-volt hover:bg-cyber-volt/10 transition-all duration-300 group">
                     <Github className="w-6 h-6 text-cyber-volt group-hover:animate-spin" />
                   </a>
-                  <a href="#" className="p-3 border border-cyber-cobalt/30 rounded-lg hover:border-cyber-cobalt hover:bg-cyber-cobalt/10 transition-all duration-300 group">
-                    <Linkedin className="w-6 h-6 text-cyber-cobalt group-hover:animate-pulse" />
+                  <a href="https://www.linkedin.com/in/sunhengleng/" className="p-3 border border-cyber-volt/30 rounded-lg hover:border-cyber-volt hover:bg-cyber-volt/10 transition-all duration-300 group">
+                    <Linkedin className="w-6 h-6 text-cyber-volt group-hover:animate-pulse" />
                   </a>
-                  <a href="#" className="p-3 border border-cyber-amethyst/30 rounded-lg hover:border-cyber-amethyst hover:bg-cyber-amethyst/10 transition-all duration-300 group">
-                    <Terminal className="w-6 h-6 text-cyber-amethyst group-hover:animate-bounce" />
+                  <a href="#" className="p-3 border border-cyber-volt/30 rounded-lg hover:border-cyber-volt hover:bg-cyber-volt/10 transition-all duration-300 group">
+                    <Terminal className="w-6 h-6 text-cyber-volt group-hover:animate-bounce" />
                   </a>
                 </div>
               </div>
