@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { User, Shield, Code, Database, Lock, Terminal } from 'lucide-react';
 
@@ -6,8 +7,8 @@ const AboutSection = () => {
     <section id="about" className="py-20 px-4 relative">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6"> {/* remove animate-glitch */}
-            <span className="text-cyber-chateau">ABOUT.TXT</span> {/* remove animate-flicker */}
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+            <span className="text-cyber-chateau">ABOUT.TXT</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-cyber-volt via-cyber-chateau to-cyber-volt mx-auto"></div>
         </div>
@@ -56,48 +57,22 @@ const AboutSection = () => {
           </div>
 
           <div className="relative">
-            <div className="border border-cyber-volt bg-cyber-gray/10 backdrop-blur-sm">
+            <div className="border border-cyber-volt bg-cyber-gray/10 backdrop-blur-sm p-6 rounded-lg">
               <div className="text-center mb-6">
-                <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-cyber-volt via-cyber-cobalt to-cyber-amethyst p-1 animate-pulse-glow">
-                  <div className="w-full h-full rounded-full bg-cyber-black flex items-center justify-center">
-                    <Terminal className="w-16 h-16 text-cyber-volt animate-flicker" />
-                      <img
-                        src="lovable-uploads/c2a278ab-3730-4a14-b311-f9c39f677cd8.png"
-                        alt="Sunheng Profile"
-                        className="w-full h-full object-cover"
-                        onError={(e) => {
-                          console.log("Image failed to load, using fallback"); 
-                          e.currentTarget.src ='/placeholder.svg'
-                        }}
-                      />
-                    
+                <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-cyber-volt via-cyber-cobalt to-cyber-amethyst p-1 animate-pulse-glow">
+                  <div className="w-full h-full rounded-full bg-cyber-black overflow-hidden">
+                    <img
+                      src="/lovable-uploads/bd77bc32-b3ec-4872-a38f-a08bb558d6f2.png"
+                      alt="Sunheng Profile"
+                      className="w-full h-full object-cover rounded-full"
+                      onError={(e) => {
+                        console.log("Image failed to load, using fallback"); 
+                        e.currentTarget.src = '/placeholder.svg'
+                      }}
+                    />
                   </div>
                 </div>
               </div>
-
-              {/*<div className="grid grid-cols-2 gap-4 text-center">
-                <div className="p-4 border border-cyber-volt/20 rounded-lg">
-                  <Database className="w-8 h-8 text-cyber-volt mx-auto mb-2 animate-pulse" />
-                  <h4 className="font-semibold text-cyber-volt animate-flicker">Data Security</h4>
-                  <p className="text-sm text-cyber-volt/60">Encryption & Privacy</p>
-                </div>
-                <div className="p-4 border border-cyber-cobalt/20 rounded-lg">
-                  <Lock className="w-8 h-8 text-cyber-cobalt mx-auto mb-2 animate-pulse" />
-                  <h4 className="font-semibold text-cyber-cobalt animate-flicker">Access Control</h4>
-                  <p className="text-sm text-cyber-cobalt/60">Authentication</p>
-                </div>
-                <div className="p-4 border border-cyber-amethyst/20 rounded-lg">
-                  <Shield className="w-8 h-8 text-cyber-amethyst mx-auto mb-2 animate-pulse" />
-                  <h4 className="font-semibold text-cyber-amethyst animate-flicker">Threat Analysis</h4>
-                  <p className="text-sm text-cyber-amethyst/60">Risk Assessment</p>
-                </div>
-                <div className="p-4 border border-cyber-volt/20 rounded-lg">
-                  <Terminal className="w-8 h-8 text-cyber-volt mx-auto mb-2 animate-pulse" />
-                  <h4 className="font-semibold text-cyber-volt animate-flicker">Pentesting</h4>
-                  <p className="text-sm text-cyber-volt/60">Vulnerability Discovery</p>
-                  
-                </div>
-              </div>*/}
             </div>
           </div>
         </div>
