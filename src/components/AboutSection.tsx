@@ -13,7 +13,7 @@ const AboutSection = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-cyber-volt via-cyber-chateau to-cyber-volt mx-auto"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
             <div className="border border-cyber-volt/30 bg-cyber-gray/20 p-6 rounded-lg backdrop-blur-sm">
               <div className="flex items-center mb-4">
@@ -56,21 +56,28 @@ const AboutSection = () => {
             </div>
           </div>
 
-          <div className="relative">
-            <div className="border border-cyber-volt bg-cyber-gray/10 backdrop-blur-sm p-6 rounded-lg">
-              <div className="text-center mb-6">
-                <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-cyber-volt via-cyber-cobalt to-cyber-amethyst p-1 animate-pulse-glow">
-                  <div className="w-full h-full rounded-full bg-cyber-black overflow-hidden">
-                    <img
-                      src="/lovable-uploads/bd77bc32-b3ec-4872-a38f-a08bb558d6f2.png"
-                      alt="Sunheng Profile"
-                      className="w-full h-full object-cover rounded-full"
-                      onError={(e) => {
-                        console.log("Image failed to load, using fallback"); 
-                        e.currentTarget.src = '/placeholder.svg'
-                      }}
-                    />
-                  </div>
+          <div className="relative flex justify-center items-center">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-cyber-volt via-cyber-cobalt to-cyber-amethyst rounded-lg p-1 animate-pulse-glow">
+                <div className="bg-cyber-black rounded-lg h-full w-full"></div>
+              </div>
+              <div className="relative p-8">
+                <div className="w-80 h-96 rounded-lg overflow-hidden border-2 border-cyber-volt/50">
+                  <img
+                    src="/lovable-uploads/bd77bc32-b3ec-4872-a38f-a08bb558d6f2.png"
+                    alt="Sunheng Profile"
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      console.log("Image failed to load, using fallback"); 
+                      e.currentTarget.src = '/placeholder.svg'
+                    }}
+                  />
+                </div>
+                <div className="absolute top-4 right-4 text-cyber-volt text-6xl font-mono animate-flicker">
+                  &gt;
+                </div>
+                <div className="absolute bottom-4 left-4 text-cyber-volt text-4xl font-mono animate-flicker">
+                  _
                 </div>
               </div>
             </div>
