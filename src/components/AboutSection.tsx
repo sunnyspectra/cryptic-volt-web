@@ -61,8 +61,8 @@ const AboutSection = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-cyber-volt via-cyber-cobalt to-cyber-amethyst rounded-lg p-1 animate-pulse-glow">
                 <div className="bg-cyber-black rounded-lg h-full w-full"></div>
               </div>
-              <div className="relative p-3">
-                <div className="w-96 h-[480px] rounded-lg overflow-hidden border-2 border-cyber-volt/50">
+              <div className="relative p-2">
+                <div className="w-108 h-[720px] rounded-lg overflow-hidden border-2 border-cyber-volt/50">
                   <img
                     src="/lovable-uploads/bd77bc32-b3ec-4872-a38f-a08bb558d6f2.png"
                     alt="Sunheng Profile"
