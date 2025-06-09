@@ -61,8 +61,8 @@ const AboutSection = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-cyber-volt via-cyber-cobalt to-cyber-amethyst rounded-lg p-1 animate-pulse-glow">
                 <div className="bg-cyber-black rounded-lg h-full w-full"></div>
               </div>
-              <div className="relative p-8">
-                <div className="w-80 h-96 rounded-lg overflow-hidden border-2 border-cyber-volt/50">
+              <div className="relative p-3">
+                <div className="w-96 h-[480px] rounded-lg overflow-hidden border-2 border-cyber-volt/50">
                   <img
                     src="/lovable-uploads/bd77bc32-b3ec-4872-a38f-a08bb558d6f2.png"
                     alt="Sunheng Profile"
@@ -73,10 +73,10 @@ const AboutSection = () => {
                     }}
                   />
                 </div>
-                <div className="absolute top-4 right-4 text-cyber-volt text-6xl font-mono animate-flicker">
+                <div className="absolute top-1 right-1 text-cyber-volt text-6xl font-mono animate-flicker">
                   &gt;
                 </div>
-                <div className="absolute bottom-4 left-4 text-cyber-volt text-4xl font-mono animate-flicker">
+                <div className="absolute bottom-1 left-1 text-cyber-volt text-4xl font-mono animate-flicker">
                   _
                 </div>
               </div>
