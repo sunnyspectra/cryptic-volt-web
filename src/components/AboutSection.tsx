@@ -64,12 +64,12 @@ const AboutSection = () => {
               <div className="relative p-2">
                 <div className="w-108 h-[720px] rounded-lg overflow-hidden border-2 border-cyber-volt/50">
                   <img
-                    src="/lovable-uploads/bd77bc32-b3ec-4872-a38f-a08bb558d6f2.png"
+                    src={`${import.meta.env.BASE_URL}lovable-uploads/bd77bc32-b3ec-4872-a38f-a08bb558d6f2.png`}
                     alt="Sunheng Profile"
                     className="w-full h-full object-cover"
                     onError={(e) => {
                       console.log("Image failed to load, using fallback"); 
-                      e.currentTarget.src = '/placeholder.svg'
+                      e.currentTarget.src = `${import.meta.env.BASE_URL}placeholder.svg`
                     }}
                   />
                 </div>
