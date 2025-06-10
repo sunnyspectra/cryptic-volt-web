@@ -9,12 +9,21 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+// Get the base path from the current location
+const getBasename = () => {
+  const path = window.location.pathname;
+  if (path.startsWith('/cryptic-volt-web')) {
+    return '/cryptic-volt-web';
+  }
+  return '';
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename="/cryptic-volt-web">
+      <BrowserRouter basename={getBasename()}>
         <Routes>
           <Route path="/" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
