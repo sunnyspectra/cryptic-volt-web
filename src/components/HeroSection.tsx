@@ -29,25 +29,25 @@ const HeroSection = () => {
 
         <div className="text-lg md:text-xl mb-8 text-cyber-chateau animate-flicker">
           <p className="mb-2">
-            &gt; Penetrating systems, securing networks, defending digital assets_
+            &gt; Experience in backend & frontend development, robotics, tutoring_
           </p>
           <p className="text-cyber-chateau">
-            &gt; Full-stack developer with cybersecurity expertise_
+            &gt; Recent CS Grad looking for future in cybersecurity_
           </p>
         </div> 
 
         <div className="flex flex-wrap justify-center gap-4 mb-8">
           <div className="flex items-center space-x-2 bg-cyber-gray/50 px-4 py-2 rounded-lg border border-cyber-volt/50 hover:border-cyber-volt transition-all duration-300">
             <Terminal className="w-5 h-5 text-cyber-chateau" />
-            <span className="text-cyber-chateau animate-flicker">Penetration Testing</span>
+            <span className="text-cyber-chateau animate-flicker">Cybersecurity Enthusiast</span>
           </div>
           <div className="flex items-center space-x-2 bg-cyber-gray/50 px-4 py-2 rounded-lg border border-cyber-volt/50 hover:border-cyber-volt transition-all duration-300">
             <Code className="w-5 h-5 text-cyber-chateau" />
-            <span className="text-cyber-chateau animate-flicker">Secure Development</span>
+            <span className="text-cyber-chateau animate-flicker">Frontend/Backend Development</span>
           </div>
           <div className="flex items-center space-x-2 bg-cyber-gray/50 px-4 py-2 rounded-lg border border-cyber-volt/50 hover:border-cyber-volt transition-all duration-300">
             <Zap className="w-5 h-5 text-cyber-chateau" />
-            <span className="text-cyber-chateau animate-flicker">Incident Response</span>
+            <span className="text-cyber-chateau animate-flicker">Robotics Specialist</span>
           </div>
         </div>
 
